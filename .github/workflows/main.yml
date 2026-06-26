@@ -3,8 +3,8 @@ on:
   push:
     branches: [ main ]
 jobs:
-run-redmine-tests:
-  runs-on: ubuntu-latest
+  run-redmine-tests:
+    runs-on: ubuntu-latest
 steps:
   - name: Étape 1 - Récupérer le code source
   uses: actions/checkout@v4
