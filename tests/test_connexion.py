@@ -31,9 +31,9 @@ def test_login(driver):
     #d'environnement
     # Si APP_URL n'est pas fournie par GitHub, on utilise l'IP publique de
     #votre Redmine
-    url = os.environ.get("APP_URL", "APP_URL")
-    username = os.environ.get("APP_USERNAME", "APP_USERNAME")
-    password = os.environ.get("APP_PASSWORD", "APP_PASSWORD")
+    url = os.environ.get("APP_URL")
+    username = os.environ.get("APP_USERNAME")
+    password = os.environ.get("APP_PASSWORD")
     driver.get(url + "/login")
     driver.find_element(By.ID, "username").send_keys(username)
     driver.find_element(By.ID, "password").send_keys(password)
